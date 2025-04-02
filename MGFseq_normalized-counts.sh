@@ -8,7 +8,7 @@
 # Version: 1.0
 
 # Define the range of barcodes
-barcodes=$(seq -w 1 26)
+barcodes=$(seq -w 1 96)
 
 # Input directory for count files
 input_dir="input_counts"
