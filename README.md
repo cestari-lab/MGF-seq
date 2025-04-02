@@ -45,27 +45,32 @@ Feature Counts: Raw counts for each gene in all samples.
 Geometric Means: A file containing geometric means for each gene.
 Differential Expression Results: A table of logFC and p-values for all pairwise comparisons.
 
-Pipeline Steps:
-Mapping Reads:
+**Pipeline Steps:**
+
+_Mapping Reads:_
 
 Maps reads from FASTQ files to the reference genome using minimap2.
 Outputs SAM files to the result_mapcount/sam/ directory.
-Processing BAM Files:
+
+_Processing BAM Files:_
 
 Converts SAM files to BAM format using samtools view.
 Sorts BAM files using samtools sort.
 Indexes BAM files using samtools index.
 Outputs sorted BAM files to the result_mapcount/sorted_bam/ directory.
-Feature Counting:
+
+_Feature Counting:_
 
 Counts reads mapped to genomic features using featureCounts.
 Outputs raw counts to result_mapcount/counts/featureCounts.txt.
-Normalization:
+
+_Normalization:_
 
 Calculates geometric means for each gene across all samples.
 Normalizes counts using size factors to account for sequencing depth differences.
 Outputs normalized counts to normalized_counts/.
-Differential Expression Analysis:
+
+_Differential Expression Analysis:_
 
 Uses an embedded R script to calculate log fold change (logFC) and p-values for each gene between defined groups.
 Outputs differential expression results to differential_expression/differential_expression_results.txt.
