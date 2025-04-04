@@ -48,30 +48,30 @@ Differential Expression Results: A table of logFC and p-values for all pairwise 
 
 # **Pipeline Steps:**
 
-_Mapping Reads:_
+*_Mapping Reads:_
 
 Maps reads from FASTQ files to the reference genome using minimap2.
 Outputs SAM files to the result_mapcount/sam/ directory.
 
-_Processing BAM Files:_
+*_Processing BAM Files:_
 
 Converts SAM files to BAM format using samtools view.
 Sorts BAM files using samtools sort.
 Indexes BAM files using samtools index.
 Outputs sorted BAM files to the result_mapcount/sorted_bam/ directory.
 
-_Feature Counting:_
+*_Feature Counting:_
 
 Counts reads mapped to genomic features using featureCounts.
 Outputs raw counts to result_mapcount/counts/featureCounts.txt.
 
-_Normalization:_
+*_Normalization:_
 
 Calculates geometric means for each gene across all samples.
 Normalizes counts using size factors to account for sequencing depth differences.
 Outputs normalized counts to normalized_counts/.
 
-_Differential Expression Analysis:_
+*_Differential Expression Analysis:_
 
 Uses an embedded R script to calculate log fold change (logFC) and p-values for each gene between defined groups.
 Outputs differential expression results to differential_expression/differential_expression_results.txt.
