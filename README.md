@@ -7,21 +7,22 @@ This repository contains a comprehensive pipeline for processing MGFseq (_Trypan
 
 # **Features:**
 
-Read Mapping:
+* Read Mapping:
 Uses minimap2 to map sequencing reads (FASTQ files) to a reference genome.
 Outputs SAM files for further processing.
 
-BAM File Processing:
+* BAM File Processing:
 Converts SAM files to BAM format using samtools.
 Sorts and indexes BAM files for efficient downstream analysis.
 
-Feature Counting:
+* Feature Counting:
 Uses featureCounts to count reads mapped to genomic features (e.g., genes) based on an annotation file (GTF format).
 Outputs raw counts for each feature.
 
-Normalization:
+* Normalization:
 Calculates geometric means for each gene across multiple samples.
 Normalizes counts using size factors to account for differences in sequencing depth.
+The pipeline follows a median of ratios normalization.
 
 Differential Expression Analysis:
 Performs pairwise comparisons between defined groups.
