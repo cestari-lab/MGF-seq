@@ -24,12 +24,12 @@ Calculates geometric means for each gene across multiple samples.
 Normalizes counts using size factors to account for differences in sequencing depth.
 The pipeline follows a median of ratios normalization.
 
-Differential Expression Analysis:
+* Differential Expression Analysis:
 Performs pairwise comparisons between defined groups.
 Calculates log fold change (logFC) and p-values for each gene.
 Outputs a comprehensive table of differential expression results.
 
-Error Handling:
+* Error Handling:
 Skips missing files with warnings and exits gracefully if no valid input files are found.
 
 # **How It Works:**
