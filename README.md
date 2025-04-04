@@ -65,7 +65,7 @@ Outputs sorted BAM files to the result_mapcount/sorted_bam/ directory.
 Counts reads mapped to genomic features using featureCounts.
 Outputs raw counts to result_mapcount/counts/featureCounts.txt.
 
-*_Normalization:_
+* _Normalization:_
 
 Calculates geometric means for each gene across all samples.
 Normalizes counts using size factors to account for sequencing depth differences.
