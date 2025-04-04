@@ -76,5 +76,13 @@ Outputs normalized counts to normalized_counts/.
 
 Uses an embedded R script to calculate log fold change (logFC) and p-values for each gene between defined groups.
 Outputs differential expression results to differential_expression/differential_expression_results.txt.
-Example Directory Structure:
+
+# Contributing
+If you'd like to contribute, please fork the repository and use a feature branch. Pull requests are warmly welcome.
+
+# Licensing
+The code in this project is licensed under a CC BY-NC 4.0 license. This means you can use it with proper attribution to original authors, indicating if any modifications were done, only for non commercial applications. (https://creativecommons.org/licenses/by-nc/4.0/)
+
+# Links
+If you want to see more of our work you can check out our website: https://www.cestarilab.com/
 
