@@ -4,6 +4,8 @@
 # Date: 02-04-2024
 # Version: 1.0
 
+#Open R software and install the package
+
 # Load required libraries
 library(dplyr)
 library(tidyr)
@@ -24,11 +26,11 @@ data <- rename(data, Gene = id)
 # Step 3: Define groups
 # Replace the sample names with those relevant to your dataset
 groups <- list(
-  Group_A = c("Sample_A1", "Sample_A2", "Sample_A3"),
-  Group_B = c("Sample_B1", "Sample_B2", "Sample_B3"),
-  Group_C = c("Sample_C1", "Sample_C2", "Sample_C3"),
-  Group_D = c("Sample_D1", "Sample_D2", "Sample_D3"),
-  Group_E = c("Sample_E1", "Sample_E2", "Sample_E3")
+  Group_A = c("Replicate_A1", "Replicate_A2", "Replicate_A3"),
+  Group_B = c("Replicate_B1", "Replicate_B2", "Replicate_B3"),
+  Group_C = c("Replicate_C1", "Replicate_C2", "Replicate_C3"),
+  Group_D = c("Replicate_D1", "Replicate_D2", "Replicate_D3"),
+  Group_E = c("Replicate_E1", "Replicate_E2", "Replicate_E3")
 )
 
 # Step 4: Define comparisons
