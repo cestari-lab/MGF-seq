@@ -5,7 +5,7 @@ Code for analysis of multigene family sequence from Trypanosoma cruzi using nano
 
 This repository contains a comprehensive pipeline for processing MGFseq (_Trypanosoma cruzi_ Multigene Family protein Sequencing) data. The pipeline includes steps for read mapping, BAM file processing, feature counting, normalization, and differential expression analysis. It is designed to handle high-throughput sequencing data efficiently and produce normalized counts and differential expression results for downstream analysis.
 
-**Features:**
+# **Features:**
 
 Read Mapping:
 Uses minimap2 to map sequencing reads (FASTQ files) to a reference genome.
@@ -31,7 +31,7 @@ Outputs a comprehensive table of differential expression results.
 Error Handling:
 Skips missing files with warnings and exits gracefully if no valid input files are found.
 
-**How It Works:**
+# **How It Works:**
 
 **Input:**
 FASTQ Files: Raw sequencing reads for each sample.
@@ -46,7 +46,7 @@ Feature Counts: Raw counts for each gene in all samples.
 Geometric Means: A file containing geometric means for each gene.
 Differential Expression Results: A table of logFC and p-values for all pairwise comparisons.
 
-**Pipeline Steps:**
+# **Pipeline Steps:**
 
 _Mapping Reads:_
 
